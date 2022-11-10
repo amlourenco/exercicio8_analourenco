@@ -5,6 +5,7 @@
     src: url('IDroid.otf') format('opentype');
 }
 
+
 :root {
     --fonte-bebas: 'Bebas Neue', cursive;
     --fonte-idroid: 'idroid', cursive;
