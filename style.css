@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('IDroid.otf') format('opentype');
+}
+
+:root {
+    --fonte-bebas: 'Bebas Neue', cursive;
+    --fonte-idroid: 'idroid', cursive;
+    --fonte-sans-serif: Arial, Verdana, Helvetica, sans-serif;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --cor-amarelo1: #ebe5c5;
+    --cor-verde1: #83e1ad;
+    --cor-verde2: #3ddc84;
+    --cor-verde3: #2fa866;
+    --cor-verde4: #1a5c37;
+    --cor-verde5: #063d1e;
+    --cor-transparente: #ffffff00;
+}
+
+body {
+    background-color: var(--cor-amarelo1);
+    font-family: var(--fonte-sans-serif);
+    font-size: 16px;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(var(--cor-verde3), var(--cor-verde5));
+    color: var(--cor-branco);
+    box-shadow: 0px 0px 3px 1px rgba(32, 32, 32, 0.37);
+    padding: 10px;
+    height: 200px;
+}
+
+.tit {
+    font-family: var(--fonte-bebas);
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 2px 2px var(--cor-verde4);
+    font-weight: lighter;
+}
+
+.sub {
+    font-size: 19.2px;
+    text-align: center;
+    text-shadow: 2px 2px var(--cor-verde4);
+}
+
+nav {
+    background-color: var(--cor-verde5);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    word-spacing: 20px;
+}
+
+nav>a,
+nav>a:visited {
+    color: var(--cor-verde1);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    /*isto permite suavizar a animação do hover*/
+}
+
+nav>a:hover {
+    color: var(--cor-preto);
+}
+
+main {
+    background-color: var(--cor-branco);
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 3px 1px rgba(32, 32, 32, 0.37);
+    border-radius: 0px 0px 7px 7px;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+main p {
+    /*isto significa que todos os p's que estão dentro da main vão ficar com estas caracteristicas*/
+    text-indent: 30px;
+    margin: 15px 0px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.last {
+    padding-bottom: 30px;
+}
+
+article {
+    margin: 0px 20px;
+}
+
+.title {
+    color: var(--cor-verde5);
+    font-size: 28.8px;
+    font-family: var(--fonte-idroid);
+    font-weight: lighter;
+    padding-top: 20px;
+    margin: 0px;
+    text-align: justify;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+.subtitle {
+    background-image: linear-gradient(to right, var(--cor-verde1), var(--cor-transparente));
+    color: var(--cor-verde4);
+    font-size: 20.8px;
+    font-family: var(--fonte-idroid);
+    font-weight: lighter;
+    padding-left: 5px;
+    text-align: justify;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+a[target=_blank]::after {
+    /*isto é para a tag com emoji*/
+    content: '\00A0\1F517';
+}
+
+.aaa {
+    background-color: var(--cor-verde1);
+    color: var(--cor-verde5);
+    text-decoration: none;
+    padding: 2px 5px;
+    font-weight: bold
+}
+
+strong {
+    color: var(--cor-verde4);
+}
+
+#logo {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+
+#monitor {
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+    display: block;
+}
+
+iframe {
+    background-color: var(--cor-verde4);
+    aspect-ratio: 16/9;   
+    width: 100%;
+    padding: 5% 9%;
+    box-sizing: border-box;
+    box-shadow: -20px 0px var(--cor-verde4), 20px 0px var(--cor-verde4);
+}
+
+aside {
+    box-shadow: 1px 1px 5px 0px rgba(32, 32, 32, 0.37);
+    border-radius: 7px;
+    background-color: var(--cor-verde1);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h3 {
+    background-color: var(--cor-verde4);
+    border-radius: 7px 7px 0px 0px;
+    color: var(--cor-branco);
+    padding: 10px;
+    margin: -10px -10px 0px;
+}
+
+ul {
+    columns: 2;
+    list-style-type: '\2714';
+}
+
+li a {
+    text-decoration: dotted;
+    color: var(--cor-preto);
+}
+
+footer {
+    background-color: var(--cor-verde5);
+    color: var(--cor-branco);
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+    font-size: 70%;
+}
+
+footer p {
+    margin: 0px;
+}
